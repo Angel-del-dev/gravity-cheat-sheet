@@ -59,6 +59,7 @@ export function index()
                 </ul>
                 <li><a href="#change_title">Change title</a></li>
                 <li><a href="#config">Components configuration</a></li>
+                <li><a href="#videoPlayer"><span style="color:red;">(Experimental feature)</span> Advanced video player</a></li>
             </ul>
         `),
     }

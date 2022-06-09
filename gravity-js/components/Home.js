@@ -13,6 +13,7 @@ import { introduction } from "./Introduction.js";
 import { models } from "./Models.js";
 import { reqRes } from "./ReqRes.js";
 import { routes } from "./Routes.js";
+import { videoPlayer } from "./VideoPlayer.js";
 import { views } from "./Views.js";
 
 export class Home 
@@ -33,7 +34,8 @@ export class Home
         const envB = env().body;
         const viewB = views().body;
         const componentB = component().body;
-        const componentConfigB = config().body
+        const componentConfigB = config().body;
+        const videoPlayerB = videoPlayer().body;
 
         const footerB = footer().body;
 
@@ -74,6 +76,8 @@ export class Home
                             ${componentB}
                             <hr />
                             ${componentConfigB}
+                            <hr />
+                            ${videoPlayerB}
                             <hr />
                             ${footerB}
                         </div>
